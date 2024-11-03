@@ -67,6 +67,56 @@
 </header>
 
 <main class="main">
+    <div class="popup-feedback">
+        <div class="popup-feedback__container">
+            <button class="popup-feedback__btn"></button>
+
+            <div class="popup-feedback__content-block">
+                <div class="popup-feedback__title">
+                    Ваш ФИДБЕк
+                </div>
+
+                <div class="dividing-line popup-feedback--dividing-line"></div>
+
+                <form class="popup-feedback__form">
+                    <label class="popup-feedback__form-block">
+                        Как часто вы заходите на сайт?
+                        <select class="popup-feedback__form-select" name="frequency">
+                            <option value="every_day">Почти каждый день</option>
+                            <option value="few_times_week">Несколько раз в неделю</option>
+                            <option value="once_week">Один раз в неделю</option>
+                            <option value="rarely">Редко</option>
+                        </select>
+                    </label>
+
+                    <label class="popup-feedback__form-block">
+                        Вы подписаны на e-mail рассылку?
+                        <div class="popup-feedback__form-radio-group">
+                            <label>
+                                <input type="radio" name="subscribe" value="yes">
+                                <span class="custom-checkbox"></span>
+                                <span>Да</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="subscribe" value="no">
+                                <span class="custom-checkbox"></span>
+                                <span>Нет</span>
+                            </label>
+                        </div>
+                    </label>
+
+                    <label class="popup-feedback__form-block">
+                        Расскажите, какой контент вы хотели бы видеть на нашем сайте? <q></q>
+                        <textarea class="popup-feedback__form-text" name="content"
+                                  placeholder="Может, больше рецептов?"></textarea>
+                    </label>
+
+                    <button class="popup-feedback__form-btn" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <section class="trend">
         <div class="container container__trend">
             <h2 class="trend__title">
@@ -81,13 +131,13 @@
 
                     <div class="trend__item-content">
                         <ul class="trend__tags">
-                            <li class="trend__tag">Lifestyle</li>
-                            <li class="trend__tag">INTERIOR</li>
+                            <li class="trend__tag"><a href="#" class="trend__tag-link">Lifestyle</a></li>
+                            <li class="trend__tag"><a href="#" class="trend__tag-link">INTERIOR</a></li>
                         </ul>
 
-                        <h3 class="trend__item-title">
+                        <a href="#" class="trend__item-title">
                             Сейчас в тренде: сад на подоконнике
-                        </h3>
+                        </a>
                     </div>
                 </div>
                 <div class="trend__item">
@@ -95,12 +145,12 @@
 
                     <div class="trend__item-content">
                         <ul class="trend__tags">
-                            <li class="trend__tag">Food</li>
+                            <li class="trend__tag"><a href="#" class="trend__tag-link">Food</a></li>
                         </ul>
 
-                        <h3 class="trend__item-title">
+                        <a href="#" class="trend__item-title">
                             сыры на красивых картинках из интернета: какие они на вкус?
-                        </h3>
+                        </a>
                     </div>
                 </div>
                 <div class="trend__item">
@@ -108,13 +158,13 @@
 
                     <div class="trend__item-content">
                         <ul class="trend__tags">
-                            <li class="trend__tag">Lifestyle</li>
-                            <li class="trend__tag">tRAVEL</li>
+                            <li class="trend__tag"><a href="#" class="trend__tag-link">Lifestyle</a></li>
+                            <li class="trend__tag"><a href="#" class="trend__tag-link">tRAVEL</a></li>
                         </ul>
 
-                        <h3 class="trend__item-title">
+                        <a href="#" class="trend__item-title">
                             СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ
-                        </h3>
+                        </a>
                     </div>
                 </div>
                 <div class="trend__item">
@@ -122,13 +172,13 @@
 
                     <div class="trend__item-content">
                         <ul class="trend__tags">
-                            <li class="trend__tag">food</li>
-                            <li class="trend__tag">health</li>
+                            <li class="trend__tag"><a href="#" class="trend__tag-link">food</a></li>
+                            <li class="trend__tag"><a href="#" class="trend__tag-link">health</a></li>
                         </ul>
 
-                        <h3 class="trend__item-title">
+                        <a href="#" class="trend__item-title">
                             Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?
-                        </h3>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -154,9 +204,9 @@
                             </li>
                         </ul>
 
-                        <h3 class="blog__item-content-title">
+                        <a href="#" class="blog__item-content-title">
                             10 мест, ради которых стоит проснуться на рассвете
-                        </h3>
+                        </a>
 
                         <p class="post__meta">
                             <time datetime="2019-06-10">10 июня 2019</time>
@@ -186,9 +236,9 @@
                             </li>
                         </ul>
 
-                        <h3 class="blog__item-content-title">
+                        <a href="#" class="blog__item-content-title">
                             ЙОга для начинающих в домашних условиях
-                        </h3>
+                        </a>
 
                         <p class="post__meta">
                             <time datetime="2019-06-10">10 июня 2019</time>
@@ -213,10 +263,10 @@
                             </li>
                         </ul>
 
-                        <h3 class="blog__item-content-title">
+                        <a href="#" class="blog__item-content-title">
                             Лучшие музыкальные
                             фестивали этого лета
-                        </h3>
+                        </a>
 
                         <p class="post__meta">
                             <time datetime="2019-06-10">10 июня 2019</time>
@@ -246,10 +296,10 @@
                             </li>
                         </ul>
 
-                        <h3 class="blog__item-content-title">
+                        <a href="#" class="blog__item-content-title">
                             Наукоёмкий подход к
                             кулинарии
-                        </h3>
+                        </a>
 
                         <p class="post__meta">
                             <time datetime="2019-06-10">10 июня 2019</time>
@@ -284,10 +334,10 @@
                             </li>
                         </ul>
 
-                        <h3 class="blog__item-content-title">
+                        <a href="#" class="blog__item-content-title">
                             делаем модные принты на
                             подушках для интерьера
-                        </h3>
+                        </a>
 
                         <p class="post__meta">
                             <time datetime="2019-06-10">10 июня 2019</time>
@@ -318,10 +368,10 @@
                         <div class="sidebar__new-posts-item-content">
                             <time datetime="2019-06-10">14 июня 2019</time>
 
-                            <h4 class="sidebar__new-posts-item-content-title">
+                            <a href="#" class="sidebar__new-posts-item-content-title">
                                 10 мест, ради которых
                                 стоит проснуться
-                            </h4>
+                            </a>
                         </div>
                     </div>
                     <div class="sidebar__new-posts-item">
@@ -330,9 +380,9 @@
                         <div class="sidebar__new-posts-item-content">
                             <time datetime="2019-06-10">14 июня 2019</time>
 
-                            <h4 class="sidebar__new-posts-item-content-title">
+                            <a href="#" class="sidebar__new-posts-item-content-title">
                                 Йога для домашних
-                            </h4>
+                            </a>
                         </div>
                     </div>
                     <div class="sidebar__new-posts-item">
@@ -341,11 +391,11 @@
                         <div class="sidebar__new-posts-item-content">
                             <time datetime="2019-06-10">14 июня 2019</time>
 
-                            <h4 class="sidebar__new-posts-item-content-title">
+                            <a href="#" class="sidebar__new-posts-item-content-title">
                                 как мы превратили
                                 классное место в
                                 балкон
-                            </h4>
+                            </a>
                         </div>
                     </div>
                     <div class="sidebar__new-posts-item">
@@ -354,10 +404,10 @@
                         <div class="sidebar__new-posts-item-content">
                             <time datetime="2019-06-10">14 июня 2019</time>
 
-                            <h4 class="sidebar__new-posts-item-content-title">
+                            <a href="#" class="sidebar__new-posts-item-content-title">
                                 Кулинарный подход
                                 к науке
-                            </h4>
+                            </a>
                         </div>
                     </div>
                     <div class="sidebar__new-posts-item">
@@ -366,10 +416,10 @@
                         <div class="sidebar__new-posts-item-content">
                             <time datetime="2019-06-10">14 июня 2019</time>
 
-                            <h4 class="sidebar__new-posts-item-content-title">
+                            <a href="#" class="sidebar__new-posts-item-content-title">
                                 лучшие прически для
                                 распущенных волос
-                            </h4>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -403,14 +453,14 @@
                 <div class="dividing-line sidebar__tags--dividing-line"></div>
 
                 <ul class="sidebar__tags-items">
-                    <li class="sidebar__tags-item">Fashion</li>
-                    <li class="sidebar__tags-item">MuSiC</li>
-                    <li class="sidebar__tags-item">Lifestyle</li>
-                    <li class="sidebar__tags-item">ART</li>
-                    <li class="sidebar__tags-item">Interior</li>
-                    <li class="sidebar__tags-item">travel</li>
-                    <li class="sidebar__tags-item">FOOD</li>
-                    <li class="sidebar__tags-item">HEALTH</li>
+                    <li class="sidebar__tags-item"><a class="sidebar__tags-item-link" href="#">Fashion</a></li>
+                    <li class="sidebar__tags-item"><a class="sidebar__tags-item-link" href="#">MuSiC</a></li>
+                    <li class="sidebar__tags-item"><a class="sidebar__tags-item-link" href="#">Lifestyle</a></li>
+                    <li class="sidebar__tags-item"><a class="sidebar__tags-item-link" href="#">ART</a></li>
+                    <li class="sidebar__tags-item"><a class="sidebar__tags-item-link" href="#">Interior</a></li>
+                    <li class="sidebar__tags-item"><a class="sidebar__tags-item-link" href="#">travel</a></li>
+                    <li class="sidebar__tags-item"><a class="sidebar__tags-item-link" href="#">FOOD</a></li>
+                    <li class="sidebar__tags-item"><a class="sidebar__tags-item-link" href="#">HEALTH</a></li>
                 </ul>
             </div>
 
@@ -422,12 +472,24 @@
                 <div class="dividing-line sidebar__topics-title--dividing-line"></div>
 
                 <ul class="sidebar__topics-items">
-                    <li class="sidebar__topics-item">Красота<sup>12</sup></li>
-                    <li class="sidebar__topics-item">Здоровье<sup>4</sup></li>
-                    <li class="sidebar__topics-item">Образ жизни<sup>145</sup></li>
-                    <li class="sidebar__topics-item">Музыка<sup>28</sup></li>
-                    <li class="sidebar__topics-item">Спорт<sup>62</sup></li>
-                    <li class="sidebar__topics-item">Йога<sup>8</sup></li>
+                    <li class="sidebar__topics-item">
+                        <a class="sidebar__topics-item-link" href="#">Красота<sup>12</sup></a>
+                    </li>
+                    <li class="sidebar__topics-item">
+                        <a class="sidebar__topics-item-link" href="#">Здоровье<sup>4</sup></a>
+                    </li>
+                    <li class="sidebar__topics-item">
+                        <a class="sidebar__topics-item-link" href="#">Образ жизни<sup>145</sup></a>
+                    </li>
+                    <li class="sidebar__topics-item">
+                        <a class="sidebar__topics-item-link" href="#">Музыка<sup>28</sup></a>
+                    </li>
+                    <li class="sidebar__topics-item">
+                        <a class="sidebar__topics-item-link" href="#">Спорт<sup>62</sup></a>
+                    </li>
+                    <li class="sidebar__topics-item">
+                        <a class="sidebar__topics-item-link" href="#">Йога<sup>8</sup></a>
+                    </li>
                 </ul>
             </div>
         </aside>
@@ -445,8 +507,8 @@
                 <div class="our-products__item">
                     <picture>
                         <source srcset="images/shop-item-desk1.jpg" media="(min-width: 1660px)">
-                        <source srcset="images/shop-item-mobile1.jpg" media="(min-width: 768px)">
-                        <source srcset="images/shop-item-tablet1.jpg" media="(max-width: 360px)">
+                        <source srcset="images/shop-item-tablet1.jpg" media="(min-width: 769px)">
+                        <source srcset="images/shop-item-mobile1.jpg" media="(max-width: 768px)">
                         <img class="our-products__item-img" src="images/shop-item-desk1.jpg" alt="Подушки на диван">
                     </picture>
 
@@ -473,8 +535,8 @@
                 <div class="our-products__item">
                     <picture>
                         <source srcset="images/shop-item-desk2.jpg" media="(min-width: 1660px)">
-                        <source srcset="images/shop-item-mobile2.jpg" media="(min-width: 768px)">
-                        <source srcset="images/shop-item-tablet2.jpg" media="(max-width: 360px)">
+                        <source srcset="images/shop-item-tablet2.jpg" media="(min-width: 769px)">
+                        <source srcset="images/shop-item-mobile2.jpg" media="(max-width: 768px)">
                         <img class="our-products__item-img" src="images/shop-item-desk1.jpg" alt="Кукла «Зайчик»">
                     </picture>
 
@@ -502,8 +564,8 @@
                 <div class="our-products__item">
                     <picture>
                         <source srcset="images/shop-item-desk3.jpg" media="(min-width: 1660px)">
-                        <source srcset="images/shop-item-mobile3.jpg" media="(min-width: 768px)">
-                        <source srcset="images/shop-item-tablet3.jpg" media="(max-width: 360px)">
+                        <source srcset="images/shop-item-tablet3.jpg" media="(min-width: 769px)">
+                        <source srcset="images/shop-item-mobile3.jpg" media="(max-width: 768px)">
                         <img class="our-products__item-img" src="images/shop-item-desk1.jpg" alt="Шестиугольная рамка">
                     </picture>
 
