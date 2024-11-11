@@ -56,7 +56,7 @@ body {
     z-index: 2;
 }
 
-.container__header {
+.header__container {
     padding-top: 28px;
 }
 
@@ -130,7 +130,7 @@ body {
     margin-bottom: 64px;
 }
 
-.container__trend {
+.trend__container {
     padding: 0;
     width: 100%;
     max-width: 100%;
@@ -218,12 +218,16 @@ body {
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 700;
+    transition: 0.2s linear;
 
+    &:hover {
+        color: #b59f5b;
+    }
 }
 
 
 /*blog*/
-.container__blog {
+.blog-container {
     display: flex;
     flex-direction: row;
     gap: 0 125px;
@@ -271,9 +275,15 @@ body {
 
 
     margin-bottom: 35px;
+
+    transition: 0.2s linear;
+
+    &:hover {
+        color: #b59f5b;
+    }
 }
 
-.post__meta {
+.blog__item-post-meta {
     font-size: 12px;
     color: #000000;
     font-weight: 700;
@@ -288,7 +298,7 @@ body {
     margin-bottom: 50px;
 }
 
-.post__excerpt {
+.blog__item-post-excerpt {
     font-size: 15px;
     line-height: 22px;
     color: #0f0d0e;
@@ -358,7 +368,7 @@ body {
 
 }
 
-.sidebar__search-form {
+.sidebar__search-search-form {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -489,10 +499,6 @@ body {
 }
 
 
-
-
-
-
 .sidebar__topics-title {
     font-size: 14px;
     line-height: 29px;
@@ -507,14 +513,14 @@ body {
     margin: 14px auto 28px auto;
 }
 
-.sidebar__topics-items{
+.sidebar__topics-items {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 
-.sidebar__topics-item-link{
+.sidebar__topics-item-link {
     font-size: 14px;
     line-height: 47px;
     color: #000000;
@@ -523,7 +529,7 @@ body {
 
     padding-bottom: 20px;
 
-    &:hover{
+    &:hover {
         color: #b59f5b;
     }
 
@@ -585,7 +591,6 @@ body {
     border: 3px solid #b59f5b;
     margin-top: 180px;
     padding: 38px 25px 25px 25px;
-    height: 267px;
 
 }
 
@@ -940,12 +945,12 @@ body {
         line-height: 55px;
     }
 
-    .container__header {
+    .header__container {
         padding-top: 43px;
     }
 
     /*trend*/
-    .container__trend {
+    .trend__container {
         padding: 0;
     }
 
@@ -958,7 +963,7 @@ body {
         height: 247px;
     }
 
-    /*container__blog*/
+    /*blog-container*/
     .blog__wrapper {
         margin-bottom: 40px;
     }
@@ -977,7 +982,7 @@ body {
         padding-bottom: 20px;
     }
 
-    .container__blog {
+    .blog-container {
         gap: 0 30px;
     }
 
@@ -1026,7 +1031,7 @@ body {
 }
 
 @media (max-width: 700px) {
-    .container__blog {
+    .blog-container {
         display: flex;
         flex-direction: column;
     }
@@ -1073,7 +1078,7 @@ body {
         margin-bottom: 40px;
     }
 
-    .container__header {
+    .header__container {
         padding-top: 30px;
     }
 
@@ -1104,7 +1109,7 @@ body {
     }
 
     /*trend*/
-    .container__trend {
+    .trend__container {
         padding: 0;
     }
 
@@ -1117,19 +1122,19 @@ body {
         height: 230px;
     }
 
-    /*container__blog*/
+    /*blog-container*/
     .blog__item-content-title {
         font-size: 16px;
         line-height: 20px;
         margin-bottom: 24px;
     }
 
-    .post__excerpt {
+    .blog__item-post-excerpt {
         font-size: 14px;
         line-height: 20px;
     }
 
-    .post__meta {
+    .blog__item-post-meta {
         margin-bottom: 24px;
     }
 
@@ -1151,10 +1156,6 @@ body {
         font-size: 16px;
     }
 
-    .our-products__item-content {
-        height: 267px;
-    }
-
     /*popup-feedback*/
     .popup-feedback__container {
         max-width: 331px;
@@ -1166,3 +1167,33 @@ body {
 }
 
 
+
+/* Для устройств с шириной экрана от 641px до 1200px */
+/* Портретная ориентация — две колонки */
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
+    .trend__item {
+        flex: 1 1 calc(50% - 4px);
+    }
+}
+
+/* Пейзажная ориентация — четыре колонки */
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+    .trend__item {
+        flex: 1 1 calc(25% - 4px);
+    }
+}
+
+/* Для устройств с шириной экрана 640px и меньше */
+/* Портретная ориентация — одна колонка */
+@media (max-width: 640px) and (orientation: portrait) {
+    .trend__item {
+        flex: 1 1 100%;
+    }
+}
+
+/* Пейзажная ориентация — две колонки */
+@media (max-width: 640px) and (orientation: landscape) {
+    .trend__item {
+        flex: 1 1 calc(50% - 4px);
+    }
+}
